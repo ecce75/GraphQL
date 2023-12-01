@@ -21,7 +21,7 @@ The implementation follows a single-page application approach, where all page ch
 
 ## Usage
 
-Link: 
+Link: https://ecce75.github.io/GraphQL/public/
 
 ## Authors
 Created by [Ekke Tristan Uibo](https://github.com/ecce75)
