@@ -97,6 +97,16 @@ function displayUserData(userData) {
             totalXP += transaction.amount;
         }
     });
+     // Additional code for the log-out button
+    const header = document.querySelector('.main-header');
+    const logoutButton = '<button id="logout-button" style="float: right; margin-right: 20px;">Log Out</button>';
+    header.insertAdjacentHTML('beforeend', logoutButton);
+
+    // Add event listener for the logout button if needed
+    document.getElementById('logout-button').addEventListener('click', () => {
+        // Log out logic here
+        location.reload();
+    });
     // Create a string to hold HTML content with styled divs
     const userDetails = `
         <div class="user-info">
