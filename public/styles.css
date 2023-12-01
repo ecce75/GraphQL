@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items for better presentation */
+    gap: 20px; /* Adds space between the divs */
+    padding: 20px; /* Adds padding around the container */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Styling for the user-info section */
+.user-info {
+    width: 100%; /* Takes full width */
+    text-align: center; /* Centers the text */
+}
+
+/* Container for the graphs */
+.graphs-container {
+    display: flex;
+    justify-content: center; /* Center align the items horizontally */
+    gap: 20px; /* Adds space between the graph divs */
+    width: 100%; /* Takes full width */
+}
+
+/* Individual graph sections */
+#audits-graph, #chart-container {
+    flex: 1; /* Each graph section takes equal space */
+    /* Add any specific styling for the graph sections here */
+}
+
+
+
+.form-input {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-submit {
+    width: 100%;
+}
+.form-submit input {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-submit input:hover {
+    background-color: #0056b3;
+}
+
+.user-info {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.user-detail {
+    margin-bottom: 10px;
+}
+
+.main-header {
+    background-color: #4a4a4a; /* Dark gray color */
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-header h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+    stroke-dasharray: 2, 2;
+}
+.grid path {
+    stroke-width: 0;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none; /* This makes sure the tooltip doesn't interfere with other mouse events */
+    /* ... other styling ... */
+}
